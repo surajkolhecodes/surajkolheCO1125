@@ -1,0 +1,153 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background:#01479E;
+    color: #fff;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #00eeff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 25px;
+    font-size: 1rem;
+    position: relative;
+}
+
+nav a.active,
+nav a:hover {
+    color: #00eeff;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 8% 0;
+    gap: 3rem;
+}
+
+.home-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00eeff;
+    box-shadow: 0 0 25px #00eeff;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.home-content h1 span {
+    color: #00eeff;
+}
+
+.typing-text span {
+    color: #00eeff;
+}
+
+.home-content p {
+    margin: 15px 0;
+    max-width: 450px;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-right: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00eeff;
+    transform: translateY(-4px);
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #00eeff;
+    color: #00eeff;
+    border-radius: 6px;
+    margin-right: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00eeff;
+    color: #000;
+}
+
+.btn-alt {
+    background: #00eeff;
+    color: #000;
+}
+
+.btn-alt:hover {
+    background: transparent;
+    color: #00eeff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
